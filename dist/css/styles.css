@@ -1,3 +1,22 @@
+body {
+  height: 100vh;
+  margin: 0; }
+
+h1, h2 {
+  color: #F6F6F6; }
+
+p {
+  color: #B3B3B3; }
+
+.nav {
+  background-color: #333;
+  height: 100vh; }
+
+.content {
+  background-color: #666;
+  height: 100vh; }
+
+/* Import bulma vars */
 @keyframes spinAround {
   from {
     transform: rotate(0deg); }
@@ -507,6 +526,3 @@
   @media screen and (min-width: 1000px) {
     .columns.is-desktop {
       display: flex; } }
-
-p {
-  color: #B3B3B3; }

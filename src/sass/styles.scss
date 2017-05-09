@@ -1,7 +1,28 @@
-@import "node_modules/bulma/sass/utilities/_all";
-@import "node_modules/bulma/sass/grid/columns";
 @import 'vars.scss';
+
+body {
+	height: 100vh;
+	margin: 0;
+}
+
+h1, h2 {
+	color: $off-white;
+}
 
 p {
 	color: $p-text;
 }
+
+.nav {
+	background-color: $nav-bg;
+	height: 100vh;
+}
+
+.content {
+	background-color: $content-bg;
+	height: 100vh;
+}
+/* Import bulma vars */
+
+@import "node_modules/bulma/sass/utilities/_all";
+@import "node_modules/bulma/sass/grid/columns";
