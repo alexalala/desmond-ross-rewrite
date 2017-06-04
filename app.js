@@ -14,6 +14,10 @@ app.get('/', function (req, res) {
 	res.render('home');
 });
 
+app.get('/collections', function (req, res) {
+	res.render('collections');
+});
+
 app.listen(3000, function () {
 	console.log('It works!');
 });

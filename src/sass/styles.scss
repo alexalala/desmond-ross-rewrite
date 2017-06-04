@@ -23,7 +23,7 @@ p {
 .nav {
 	background-color: $nav-bg;
 	height: 100vh;
-	box-shadow: 7px 0 20px 0;
+	box-shadow: 4px 0 20px 0;
 	position: relative;
 }
 
@@ -68,9 +68,5 @@ p {
   	border-width: 5px;
   	border-style: solid;
   	border-color: #FFFFFF;
-  	box-shadow: 10px 10px 5px;
+  	box-shadow: 2px 2px 20px;
 }
-/* Import bulma vars */
-
-@import "node_modules/bulma/sass/utilities/_all";
-@import "node_modules/bulma/sass/grid/columns";
