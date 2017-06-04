@@ -44,6 +44,20 @@ p {
   height: 100vh;
   text-align: center; }
 
+.sliderBorder {
+  width: 80%;
+  height: 80%;
+  margin-left: 10%;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%); }
+
+#slider {
+  border-width: 5px;
+  border-style: solid;
+  border-color: #FFFFFF;
+  box-shadow: 10px 10px 5px; }
+
 /* Import bulma vars */
 @keyframes spinAround {
   from {
