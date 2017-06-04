@@ -6,30 +6,31 @@
     <link rel="stylesheet" type="text/css" href="dist/css/styles.css">
     <link rel="stylesheet" href="third-party/Ideal-Image-Slider-JS/ideal-image-slider.css">
 	<link rel="stylesheet" href="third-party/Ideal-Image-Slider-JS/themes/default/default.css">
+	<link rel="stylesheet" href="third-party/flexboxgrid-6.3.1/css/flexboxgrid.css" type="text/css">
 </head>
 <body>
-	<div class="columns is-gapless">
-		<div class="column is-3 nav">
-			<div class="columns">
-				<div class="column is-8 is-offset-2 nav-logo-text"</div>
-		    		<h1>DESMOND</h1>
-		    		<h1>ROSS</h1>
-		    		<ul>
-		    			<li>COLLECTIONS</li>
-		    			<li>PRICING</li>
-		    			<li>ABOUT</li>
-		    			<li>CONTACT</li>
-		    		</ul>
-		    	</div>
-		    </div>
-		</div>
-		<div class="column content">
-
-			{{{ body }}}
-
+<div class="row">
+	<div class="nav col-md-3">
+		<div class="row">
+			<div class="nav-logo-text col-md-8 col-md-offset-2"</div>
+				<h1>DESMOND</h1>
+				<h1>ROSS</h1>
+				<ul>
+					<li>COLLECTIONS</li>
+					<li>PRICING</li>
+					<li>ABOUT</li>
+					<li>CONTACT</li>
+				</ul>
+			</div>
 		</div>
 	</div>
-	<script src="third-party/Ideal-Image-Slider-JS/ideal-image-slider.js"></script>
-	<script type="text/javascript" src="dist/js/script.js"></script>
+	<div class="content col-md">
+
+	{{{ body }}}
+
+	</div>
+</div>
+<script src="third-party/Ideal-Image-Slider-JS/ideal-image-slider.js"></script>
+<script type="text/javascript" src="dist/js/script.js"></script>
 </body>
 </html>
