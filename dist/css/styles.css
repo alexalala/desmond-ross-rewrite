@@ -39,8 +39,8 @@ a {
     padding: 0;
     margin-top: 15vh; }
     .nav-logo-text ul li {
-      font-size: 2vw;
-      line-height: 8vh; }
+      font-size: 1.5vw;
+      line-height: 7vh; }
 
 .content {
   background-color: #666;
@@ -64,10 +64,40 @@ a {
 .collections {
   background-color: black;
   height: 35vh;
-  margin: 2vw;
+  margin: 1vw;
   border-style: solid;
   border-color: #F6F6F6;
-  box-shadow: 3px 2px 20px; }
+  box-shadow: 3px 2px 20px;
+  position: relative; }
 
 .title {
-  margin: 2rem 0 0.5rem 1.5rem; }
+  margin: 2rem 0 1rem -2rem;
+  font-size: 2rem; }
+
+.left-arrow {
+  width: 0;
+  height: 0;
+  border-top: 1.6rem solid transparent;
+  border-bottom: 1.6rem solid transparent;
+  border-right: 1.6rem solid #666;
+  bottom: 1rem;
+  position: absolute;
+  right: 7rem;
+  opacity: 0.7; }
+
+.overlay {
+  background-color: #666;
+  opacity: 0.7;
+  position: absolute;
+  font-family: "Raleway", sans-serif;
+  margin: 0 -1rem 0 1rem;
+  bottom: 1rem;
+  right: 1rem;
+  width: 7rem; }
+  .overlay p {
+    color: #F6F6F6; }
+  .overlay p.lg-text {
+    font-size: 0.75rem; }
+  .overlay p.med-text {
+    font-size: 0.75rem;
+    margin: 1.1rem 0 1.2rem 0; }
