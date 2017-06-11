@@ -7,17 +7,21 @@ body {
 
 h1 {
 	color: $off-white;
-	font-family: $logo-font;
+	font-family: $main-font;
 	font-weight: normal;
 }
 
 h2 {
 	color: $off-white;
-	font-family: $title-font;
+	font-family: $main-font;
 }
 
 p {
 	color: $p-text;
+}
+
+a {
+	color: $off-white;
 }
 
 .nav {
@@ -38,7 +42,7 @@ p {
 	ul {
 		list-style-type: none;
 		color: $off-white;
-		font-family: $title-font;
+		font-family: $main-font;
 		padding: 0;
 		margin-top: 15vh;
 
@@ -75,4 +79,11 @@ p {
 	background-color: black;
 	height: 35vh;
 	margin: 2vw;
+	border-style: solid;
+	border-color: $off-white;
+	box-shadow: 3px 2px 20px;
+}
+
+.title {
+	margin: 2rem 0 0.5rem 1.5rem;
 }
