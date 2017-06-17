@@ -18,6 +18,10 @@ app.get('/collections', function (req, res) {
 	res.render('collections');
 });
 
+app.get('/collection', function (req, res) {
+	res.render('collection');
+});
+
 app.listen(3000, function () {
 	console.log('It works!');
 });
