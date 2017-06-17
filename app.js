@@ -22,6 +22,10 @@ app.get('/collection', function (req, res) {
 	res.render('collection');
 });
 
+app.get('/image', function (req, res) {
+	res.render('image');
+});
+
 app.listen(3000, function () {
 	console.log('It works!');
 });
