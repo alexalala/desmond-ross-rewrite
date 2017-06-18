@@ -26,6 +26,10 @@ app.get('/image', function (req, res) {
 	res.render('image');
 });
 
+app.get('/prices', function (req, res) {
+	res.render('prices');
+});
+
 app.listen(3000, function () {
 	console.log('It works!');
 });

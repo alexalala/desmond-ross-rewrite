@@ -61,9 +61,10 @@ a {
   border-width: 5px;
   border-style: solid;
   border-color: #FFFFFF;
-  box-shadow: 2px 2px 20px; }
+  box-shadow: 2px 2px 20px;
+  max-height: 80vh; }
 
-.collections {
+.img-sml {
   background-color: black;
   height: 35vh;
   margin: 1vw;
@@ -72,9 +73,21 @@ a {
   box-shadow: 3px 2px 20px;
   position: relative; }
 
+.img-lg {
+  background-color: black;
+  height: 55vh;
+  margin: 3vw;
+  border-style: solid;
+  border-color: #F6F6F6;
+  box-shadow: 3px 2px 20px;
+  position: relative; }
+
 .title {
   margin: 2rem 0 1rem -2rem;
   font-size: 2rem; }
+
+.centred {
+  text-align: center; }
 
 .left-arrow {
   width: 0;
@@ -104,11 +117,8 @@ a {
     font-size: 0.75rem;
     margin: 1.1rem 0 1.2rem 0; }
 
-.img-lg {
-  background-color: black;
-  height: 55vh;
-  margin: 3vw;
-  border-style: solid;
-  border-color: #F6F6F6;
-  box-shadow: 3px 2px 20px;
-  position: relative; }
+.md-print {
+  text-align: left; }
+
+.lg-print {
+  text-align: right; }

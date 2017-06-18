@@ -75,9 +75,10 @@ a {
   	border-style: solid;
   	border-color: #FFFFFF;
   	box-shadow: 2px 2px 20px;
+  	max-height: 80vh;
 }
 
-.collections {
+.img-sml {
 	background-color: black;
 	height: 35vh;
 	margin: 1vw;
@@ -87,9 +88,23 @@ a {
 	position: relative;
 }
 
+.img-lg {
+	background-color: black;
+	height: 55vh;
+	margin: 3vw;
+	border-style: solid;
+	border-color: $off-white;
+	box-shadow: 3px 2px 20px;
+	position: relative;
+}
+
 .title {
 	margin: 2rem 0 1rem -2rem;
 	font-size: 2rem;
+}
+
+.centred {
+	text-align: center;
 }
 
 .left-arrow {
@@ -126,12 +141,10 @@ a {
 	}
 }
 
-.img-lg {
-	background-color: black;
-	height: 55vh;
-	margin: 3vw;
-	border-style: solid;
-	border-color: $off-white;
-	box-shadow: 3px 2px 20px;
-	position: relative;
+.md-print {
+	text-align: left;
+}
+
+.lg-print {
+	text-align: right;
 }
