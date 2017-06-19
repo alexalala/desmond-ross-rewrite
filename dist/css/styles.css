@@ -14,6 +14,10 @@ h2 {
   color: #F6F6F6;
   font-family: "Raleway", sans-serif; }
 
+h3 {
+  color: #F6F6F6;
+  font-family: "Raleway", sans-serif; }
+
 p {
   color: #B3B3B3;
   text-align: justify;
@@ -119,6 +123,15 @@ a {
 
 .md-print {
   text-align: left; }
+  .md-print h3 {
+    margin-top: 8vh; }
 
 .lg-print {
   text-align: right; }
+  .lg-print h3 {
+    margin-top: 8vh; }
+  .lg-print P {
+    text-align: right; }
+
+.about {
+  padding-left: 2rem; }

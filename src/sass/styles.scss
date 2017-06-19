@@ -16,6 +16,11 @@ h2 {
 	font-family: $main-font;
 }
 
+h3 {
+	color: $off-white;
+	font-family: $main-font;
+}
+
 p {
 	color: $p-text;
 	text-align: justify;
@@ -143,8 +148,21 @@ a {
 
 .md-print {
 	text-align: left;
+	h3 {
+		margin-top: 8vh;
+	}
 }
 
 .lg-print {
 	text-align: right;
+	h3 {
+		margin-top: 8vh;
+	}
+	P {
+		text-align: right;
+	}
+}
+
+.about {
+	padding-left: 2rem;
 }
