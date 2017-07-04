@@ -8,7 +8,7 @@ var slider = new IdealImageSlider.Slider({
 slider.start();
 
 var images = [
-    {url:'img/pics/abbey-cinema.jpg', name:'Abbey Cinema, Wavertree', collection: 'Historic buildings', desc:'The Abbey Cinema was designed by a local architect and first opened in 1939. In 1964, the it underwent a refurbishment to "Cinerama" which proved a spectacular hit with the Wavertree locals, including adding a curved screen and an incredible sound system to the cinema. It is now a Co-op supermarket.'},
+    {url:'img/pics/abbey-cinema.jpg', name:'Abbey Cinema, Wavertree', collection: 'New In', desc:'The Abbey Cinema was designed by a local architect and first opened in 1939. In 1964, the it underwent a refurbishment to "Cinerama" which proved a spectacular hit with the Wavertree locals, including adding a curved screen and an incredible sound system to the cinema. It is now a Co-op supermarket.'},
     {url:'img/pics/blue-coat-school.jpg', name:'The Blue Coat School', collection: 'Wavertree Parks', desc:'Shown in this picture is the Mystery Public Park blanketed in snow, looking ahead to the silhouette of the Blue Coat School and its clock tower.'},
     {url:'img/pics/bligh-street.jpg', name:'Bligh Street, Wavertree', collection: 'Liverpool Streets', desc:'This picture embodies the true spirit of the locals.'},
     {url:'img/pics/banksy-in-liverpool.jpg', name:'Banksy In Liverpool', collection: 'Famous Figures', desc:'This portrays the street artist Banksy\'s graffiti rat on the Whitehouse public house on the corner of Duke Street and Berry Street.'},
@@ -34,3 +34,26 @@ var images = [
     {url:'img/pics/wavertree-train-station.jpg', name:'Wavertree Train Station', collection: 'Liverpool Streets', desc:'Wavertree Station was opened in 1891 and was on the main southern line from Liverpool Lime Street. As can be seen in the picture, the station was accessed from between the bridges that supported the lines. The station closed in 1958 and nothing now remains at that part of the track.'}, 
     {url:'img/pics/wellington-avenue-wavertree.jpg', name:'Wellington Avenue, Wavertree', collection: 'Liverpool Streets', desc:'This painting portrays Wellington Avenue in Wavertree, which has now since been modernised.'}
 ];
+
+var imagesByCollection = images.reduce(function(result, image) {
+    result[image.collection] = result[image.collection] || [];
+    result[image.collection].push(image);
+    return result
+}, {});
+
+if (window.location.pathname == '/collections') {
+    var collections = Object.keys(imagesByCollection);
+    $(collections).each(function(index, collection){
+        var $imgDiv = '<div class="col-md-3 img-sml" onclick="window.location="collection"><div class="left-arrow"></div><div class="overlay"><p>' + collection + '</p></div></div>';
+        if(index < 3) {
+            $(".collections").append($imgDiv);
+        } else {
+            $(".collections2").append($imgDiv);
+        }
+    });
+}
+console.warn(imagesByCollection["Historic Buildings"]);
+
+console.warn(Object.keys(imagesByCollection));
+
+
