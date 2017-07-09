@@ -88,6 +88,9 @@ a {
   box-shadow: 3px 2px 20px;
   position: relative; }
 
+.img-sml.prices {
+  width: 30vw; }
+
 .img-lg {
   background-color: black;
   height: 55vh;
@@ -136,17 +139,17 @@ a {
     font-size: 0.75rem;
     margin: 1.1rem 0 1.2rem 0; }
 
-.md-print {
-  text-align: left; }
-  .md-print h3 {
-    margin-top: 8vh; }
+.prints {
+  display: flex;
+  margin-left: 15vw; }
+  .prints h3 {
+    margin-top: 10vh; }
 
-.lg-print {
+.med-print-text {
+  text-align: left; }
+
+.lg-print-text p, .lg-print-text h3 {
   text-align: right; }
-  .lg-print h3 {
-    margin-top: 8vh; }
-  .lg-print P {
-    text-align: right; }
 
 .about {
   padding-left: 2rem; }
@@ -177,7 +180,16 @@ a {
     width: 100vw; }
   .img-sml {
     width: 42vw;
-    height: 25vh; } }
+    height: 25vh; }
+  .prints {
+    margin-left: 5vw;
+    margin-right: 5vw; }
+    .prints h3 {
+      margin-top: 4vh; }
+  .med-print-text {
+    margin-left: 1rem; }
+  .lg-print-text {
+    margin-right: 1rem; } }
 
 @media handheld, screen and (max-width: 320px) {
   .img-sml {
