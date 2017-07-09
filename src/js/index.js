@@ -2,7 +2,7 @@ new IdealImageSlider.Slider('#slider');
 
 var slider = new IdealImageSlider.Slider({
 	selector: '#slider',
-	height: 400, // Required but can be set by CSS
+	height: 400,
 	interval: 4000
 });
 slider.start();
@@ -34,3 +34,13 @@ var images = [
     {url:'img/pics/wavertree-train-station.jpg', name:'Wavertree Train Station', collection: 'Liverpool Streets', desc:'Wavertree Station was opened in 1891 and was on the main southern line from Liverpool Lime Street. As can be seen in the picture, the station was accessed from between the bridges that supported the lines. The station closed in 1958 and nothing now remains at that part of the track.'}, 
     {url:'img/pics/wellington-avenue-wavertree.jpg', name:'Wellington Avenue, Wavertree', collection: 'Liverpool Streets', desc:'This painting portrays Wellington Avenue in Wavertree, which has now since been modernised.'}
 ];
+
+//function chooseCollection
+var chooseCollection = function(x) {
+    var collection = x.getAttribute('data-collection');
+    window.location = '/collection' + '#' + collection;
+};
+//change window.location and add alt value to the hash
+
+//function chosenCollection
+//append each image with collection in to the page without title
