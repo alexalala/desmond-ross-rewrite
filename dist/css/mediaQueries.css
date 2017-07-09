@@ -1,0 +1,20 @@
+/*
+ * Author: http://stuffandnonsense.co.uk/blog/about/hardboiled_css3_media_queries/
+ */
+/* Smartphones (portrait) ----------- */
+@media (max-width: 500px) {
+  .nav {
+    height: 15vh;
+    width: 100vw;
+    box-shadow: 4px 0 20px 0; }
+    .nav h1 {
+      font-size: 3.5vw;
+      padding: 5rem 0 0 2rem; }
+      .nav h1 span {
+        display: block; }
+    .nav ul {
+      margin-top: 1vh; }
+      .nav ul li {
+        font-size: 1.8vw;
+        line-height: 7vh;
+        padding-left: 2rem; } }
