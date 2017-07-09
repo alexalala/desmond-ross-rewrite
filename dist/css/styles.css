@@ -13,7 +13,9 @@ h1 {
 
 h2 {
   color: #F6F6F6;
-  font-family: "Dancing Script", cursive; }
+  font-family: "Dancing Script", cursive;
+  margin: 2rem 0 1rem -2rem;
+  font-size: 2rem; }
 
 h3 {
   color: #F6F6F6;
@@ -78,6 +80,8 @@ a {
 .img-sml {
   background-color: black;
   height: 35vh;
+  width: 20vw;
+  min-width: 150px;
   margin: 1vw;
   border-style: solid;
   border-color: #F6F6F6;
@@ -93,12 +97,16 @@ a {
   box-shadow: 3px 2px 20px;
   position: relative; }
 
-.title {
-  margin: 2rem 0 1rem -2rem;
-  font-size: 2rem; }
+.home-title {
+  margin: 2rem 0 -1rem -2rem; }
 
 .centred {
   text-align: center; }
+
+.collections {
+  display: inline-flex;
+  flex-wrap: wrap;
+  margin-left: 4vw; }
 
 .left-arrow {
   width: 0;
@@ -143,7 +151,7 @@ a {
 .about {
   padding-left: 2rem; }
 
-@media handheld, screen and (max-width: 600px) {
+@media handheld, screen and (max-width: 800px) {
   .nav {
     height: 20vh;
     width: 100vw;
@@ -166,4 +174,15 @@ a {
       clear: both;
       display: block; }
   .content {
-    width: 100vw; } }
+    width: 100vw; }
+  .img-sml {
+    width: 42vw;
+    height: 25vh; } }
+
+@media handheld, screen and (max-width: 320px) {
+  .img-sml {
+    min-width: 134px; }
+  .overlay {
+    width: 6.5rem; }
+  .left-arrow {
+    right: 6.5rem; } }
