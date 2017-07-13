@@ -151,8 +151,15 @@ a {
 .lg-print-text p, .lg-print-text h3 {
   text-align: right; }
 
-.about {
+.about h2 {
   padding-left: 2rem; }
+
+.about p {
+  margin: 1rem 3rem 0 3rem; }
+
+.about .img-sml {
+  width: 50vw;
+  margin: 2% 0 10% 17%; }
 
 @media handheld, screen and (max-width: 800px) {
   .nav {
@@ -189,7 +196,9 @@ a {
   .med-print-text {
     margin-left: 1rem; }
   .lg-print-text {
-    margin-right: 1rem; } }
+    margin-right: 1rem; }
+  .about .img-sml {
+    margin: 2% 25%; } }
 
 @media handheld, screen and (max-width: 320px) {
   .img-sml {

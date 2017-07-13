@@ -1,0 +1,62 @@
+{
+  "_from": "ideal-image-slider",
+  "_id": "ideal-image-slider@1.5.1",
+  "_inBundle": false,
+  "_integrity": "sha1-J5YvVn9UZv4ylqHayNOG5U/mFWA=",
+  "_location": "/ideal-image-slider",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "ideal-image-slider",
+    "name": "ideal-image-slider",
+    "escapedName": "ideal-image-slider",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/ideal-image-slider/-/ideal-image-slider-1.5.1.tgz",
+  "_shasum": "27962f567f5466fe3296a1dac8d386e54fe61560",
+  "_spec": "ideal-image-slider",
+  "_where": "/Users/alexandra/code/desmond-ross-rewrite",
+  "author": {
+    "name": "Gilbert Pellegrom"
+  },
+  "bugs": {
+    "url": "https://github.com/gilbitron/Ideal-Image-Slider/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "Quite simply the ideal Image Slider in vanilla JS.",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-jshint": "^0.10.0",
+    "grunt-contrib-qunit": "~0.7.0",
+    "grunt-contrib-uglify": "^0.5.1",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-string-replace": "^0.2.7",
+    "jshint-stylish": "^0.4.0",
+    "load-grunt-tasks": "^0.6.0",
+    "qunitjs": "~1.19.0"
+  },
+  "homepage": "https://github.com/gilbitron/Ideal-Image-Slider#readme",
+  "keywords": [
+    "ideal",
+    "image",
+    "slider"
+  ],
+  "license": "GPL-3.0",
+  "name": "ideal-image-slider",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gilbitron/Ideal-Image-Slider.git"
+  },
+  "scripts": {
+    "test": "grunt test"
+  },
+  "version": "1.5.1"
+}
