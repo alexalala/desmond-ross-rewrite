@@ -199,6 +199,12 @@ a {
 	}
 }
 
+.image {
+	p {
+		margin: 3rem 3rem;
+	}
+}
+
 @media handheld, screen and (max-width: 800px) {
 	.nav {
 		height: 20vh;
@@ -236,6 +242,10 @@ a {
 	.img-sml {
 		width: 42vw;
 		height: 25vh;
+	}
+
+	.img-lg {
+		height: 40vh;
 	}
 
 	.prints {
