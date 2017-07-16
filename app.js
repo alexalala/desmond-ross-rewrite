@@ -22,6 +22,10 @@ app.get('/collection', function (req, res) {
 	res.render('collection');
 });
 
+app.get('/contact', function (req, res) {
+	res.render('contact');
+});
+
 app.get('/image', function (req, res) {
 	res.render('image');
 });

@@ -14,7 +14,6 @@ h1 {
 h2 {
 	color: $off-white;
 	font-family: $header-font;
-	margin: 2rem 0 1rem -2rem;
 	font-size: 2rem;
 }
 
@@ -33,6 +32,19 @@ a {
 	color: $off-white;
 }
 
+form {
+	display: inline-grid;
+	margin-top: 10vh;
+
+	select, input, textarea {
+		background-color: $grey;
+		font-size: 1.5rem;
+		color: $content-bg;
+		padding: 10px;
+		margin-top: 7px;
+	}
+}
+
 .nav {
 	background-color: $nav-bg;
 	height: 100vh;
@@ -45,6 +57,7 @@ a {
 		margin: 0;
 		font-size: 5vw;
 		padding: 15vh 0 0 4vw;
+
 		span {
 			display: block;
 		}
@@ -81,16 +94,16 @@ a {
 	height: 80%;
 	margin-left: 10%;
 	position: relative;
-  	top: 50%;
-  	transform: translateY(-50%);
+	top: 50%;
+	transform: translateY(-50%);
 }
 
 #slider {
-  	border-width: 5px;
-  	border-style: solid;
-  	border-color: #FFFFFF;
-  	box-shadow: 2px 2px 20px;
-  	max-height: 80vh;
+	border-width: 5px;
+	border-style: solid;
+	border-color: #FFFFFF;
+	box-shadow: 2px 2px 20px;
+	max-height: 80vh;
 }
 
 .img-sml {
@@ -106,7 +119,7 @@ a {
 }
 
 .img-sml.prices {
-		width: 30vw;
+	width: 30vw;
 	}
 
 .img-lg {
@@ -117,10 +130,6 @@ a {
 	border-color: $off-white;
 	box-shadow: 3px 2px 20px;
 	position: relative;
-}
-
-.home-title {
-	margin: 2rem 0 -1rem -2rem;
 }
 
 .centred {
@@ -190,9 +199,11 @@ a {
 	h2 {
 		padding-left: 2rem;
 	}
+
 	p {
 		margin: 1rem 3rem 0 3rem;
 	}
+
 	.img-sml {
 		width: 50vw;
 		margin: 2% 0 10% 17%;
@@ -205,7 +216,63 @@ a {
 	}
 }
 
+.subheading {
+	margin: 1vh 3vh;
+}
+
+
+
+.contact {
+	h2 {
+		margin-bottom: 6vh;
+	}
+
+	p {
+		text-align: center;
+		margin: 1vh 3vh;
+	}
+
+	select {
+	  -webkit-border-radius: 0px;
+
+		i {
+			right: 2px;
+		}
+	}
+
+	input[type="text"] {
+		border: 0;
+		width: 40vw;
+		min-width: 273px;
+		border-color: $grey;
+	}
+
+	textarea {
+		width: 40vw;
+		min-width: 273px;
+	}
+
+	input[type="submit"] {
+		border: 0;
+		background-color: $nav-bg;
+		color: white;
+		padding: 10px 0;
+	}
+}
+
 @media handheld, screen and (max-width: 800px) {
+	form {
+		margin-top: 2vh;
+
+		textarea {
+				width: 60vw;
+		}
+
+		select, input, textarea {
+			font-size: 1rem;
+		}
+	}
+
 	.nav {
 		height: 20vh;
 		width: 100vw;
@@ -216,12 +283,15 @@ a {
 		h1 {
 			padding: 1.7rem 0 1rem 0;
 			font-size: 10vw;
+
 			span {
 				display: inline;
 			}
 		}
+
 		ul {
 			margin-top: 1vh;
+
 			li {
 				display: inline;
 				font-size: 0.8rem;
@@ -249,10 +319,10 @@ a {
 	}
 
 	.prints {
-		margin-left: 5vw;
-		margin-right: 5vw;
+		margin: 3vh 5vw;
+
 		h3 {
-			margin-top: 4vh;
+			margin-top: 0;
 		}
 	}
 	.med-print-text {
@@ -271,6 +341,10 @@ a {
 }
 
 @media handheld, screen and (max-width: 320px) {
+	p {
+		font-size: 0.75rem;
+	}
+
 	.img-sml {
 		min-width: 134px;
 	}
