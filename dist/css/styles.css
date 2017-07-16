@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Playfair+Display|Raleway");
-@import url("https://fonts.googleapis.com/css?family=Dancing+Script");
+@import url("https://fonts.googleapis.com/css?family=Dancing+Script|Raleway");
 /* COLOURS */
 /* FONTS */
 body {
@@ -14,7 +13,6 @@ h1 {
 h2 {
   color: #F6F6F6;
   font-family: "Dancing Script", cursive;
-  margin: 2rem 0 1rem -2rem;
   font-size: 2rem; }
 
 h3 {
@@ -28,6 +26,16 @@ p {
 
 a {
   color: #F6F6F6; }
+
+form {
+  display: inline-grid;
+  margin-top: 10vh; }
+  form select, form input, form textarea {
+    background-color: #9a9a9a;
+    font-size: 1.5rem;
+    color: #666;
+    padding: 10px;
+    margin-top: 7px; }
 
 .nav {
   background-color: #333;
@@ -100,9 +108,6 @@ a {
   box-shadow: 3px 2px 20px;
   position: relative; }
 
-.home-title {
-  margin: 2rem 0 -1rem -2rem; }
-
 .centred {
   text-align: center; }
 
@@ -164,7 +169,44 @@ a {
 .image p {
   margin: 3rem 3rem; }
 
+.subheading {
+  margin: 1vh 3vh; }
+
+.contact h2 {
+  margin-bottom: 6vh; }
+
+.contact p {
+  text-align: center;
+  margin: 1vh 3vh; }
+
+.contact select {
+  -webkit-border-radius: 0px; }
+  .contact select i {
+    right: 2px; }
+
+.contact input[type="text"] {
+  border: 0;
+  width: 40vw;
+  min-width: 273px;
+  border-color: #9a9a9a; }
+
+.contact textarea {
+  width: 40vw;
+  min-width: 273px; }
+
+.contact input[type="submit"] {
+  border: 0;
+  background-color: #333;
+  color: white;
+  padding: 10px 0; }
+
 @media handheld, screen and (max-width: 800px) {
+  form {
+    margin-top: 2vh; }
+    form textarea {
+      width: 60vw; }
+    form select, form input, form textarea {
+      font-size: 1rem; }
   .nav {
     height: 20vh;
     width: 100vw;
@@ -194,10 +236,9 @@ a {
   .img-lg {
     height: 40vh; }
   .prints {
-    margin-left: 5vw;
-    margin-right: 5vw; }
+    margin: 3vh 5vw; }
     .prints h3 {
-      margin-top: 4vh; }
+      margin-top: 0; }
   .med-print-text {
     margin-left: 1rem; }
   .lg-print-text {
@@ -206,6 +247,8 @@ a {
     margin: 2% 25%; } }
 
 @media handheld, screen and (max-width: 320px) {
+  p {
+    font-size: 0.75rem; }
   .img-sml {
     min-width: 134px; }
   .overlay {

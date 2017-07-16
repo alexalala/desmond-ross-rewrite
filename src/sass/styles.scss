@@ -14,7 +14,6 @@ h1 {
 h2 {
 	color: $off-white;
 	font-family: $header-font;
-	margin: 2rem 0 1rem -2rem;
 	font-size: 2rem;
 }
 
@@ -31,6 +30,19 @@ p {
 
 a {
 	color: $off-white;
+}
+
+form {
+	display: inline-grid;
+	margin-top: 10vh;
+
+	select, input, textarea {
+		background-color: $grey;
+		font-size: 1.5rem;
+		color: $content-bg;
+		padding: 10px;
+		margin-top: 7px;
+	}
 }
 
 .nav {
@@ -120,10 +132,6 @@ a {
 	position: relative;
 }
 
-.home-title {
-	margin: 2rem 0 -1rem -2rem;
-}
-
 .centred {
 	text-align: center;
 }
@@ -208,7 +216,63 @@ a {
 	}
 }
 
+.subheading {
+	margin: 1vh 3vh;
+}
+
+
+
+.contact {
+	h2 {
+		margin-bottom: 6vh;
+	}
+
+	p {
+		text-align: center;
+		margin: 1vh 3vh;
+	}
+
+	select {
+	  -webkit-border-radius: 0px;
+
+		i {
+			right: 2px;
+		}
+	}
+
+	input[type="text"] {
+		border: 0;
+		width: 40vw;
+		min-width: 273px;
+		border-color: $grey;
+	}
+
+	textarea {
+		width: 40vw;
+		min-width: 273px;
+	}
+
+	input[type="submit"] {
+		border: 0;
+		background-color: $nav-bg;
+		color: white;
+		padding: 10px 0;
+	}
+}
+
 @media handheld, screen and (max-width: 800px) {
+	form {
+		margin-top: 2vh;
+
+		textarea {
+				width: 60vw;
+		}
+
+		select, input, textarea {
+			font-size: 1rem;
+		}
+	}
+
 	.nav {
 		height: 20vh;
 		width: 100vw;
@@ -255,11 +319,10 @@ a {
 	}
 
 	.prints {
-		margin-left: 5vw;
-		margin-right: 5vw;
-		
+		margin: 3vh 5vw;
+
 		h3 {
-			margin-top: 4vh;
+			margin-top: 0;
 		}
 	}
 	.med-print-text {
@@ -278,6 +341,10 @@ a {
 }
 
 @media handheld, screen and (max-width: 320px) {
+	p {
+		font-size: 0.75rem;
+	}
+
 	.img-sml {
 		min-width: 134px;
 	}
