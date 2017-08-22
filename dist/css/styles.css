@@ -86,7 +86,7 @@ form {
   max-height: 80vh; }
 
 .img-sml {
-  background-color: black;
+  background-size: cover;
   height: 35vh;
   width: 20vw;
   min-width: 150px;
