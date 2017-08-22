@@ -107,7 +107,7 @@ form {
 }
 
 .img-sml {
-	background-color: black;
+	background-size: cover;
 	height: 35vh;
 	width: 20vw;
 	min-width: 150px;
@@ -136,7 +136,7 @@ form {
 	text-align: center;
 }
 
-.collections {
+.collections, .collection {
 	display: inline-flex;
 	flex-wrap: wrap;
 	margin-left: 4vw;
@@ -196,10 +196,6 @@ form {
 }
 
 .about {
-	h2 {
-		padding-left: 2rem;
-	}
-
 	p {
 		margin: 1rem 3rem 0 3rem;
 	}
@@ -274,7 +270,7 @@ form {
 	}
 
 	.nav {
-		height: 20vh;
+		height: 135px;
 		width: 100vw;
 		padding-bottom: 2rem;
 		box-shadow: 4px 0 20px 0;
@@ -282,7 +278,7 @@ form {
 
 		h1 {
 			padding: 1.7rem 0 1rem 0;
-			font-size: 10vw;
+			font-size: 3.5rem;
 
 			span {
 				display: inline;
