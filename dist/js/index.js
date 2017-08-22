@@ -3,7 +3,7 @@ new IdealImageSlider.Slider('#slider');
 var slider = new IdealImageSlider.Slider({
 		selector: '#slider',
 		height: 400,
-		interval: 4000
+		interval: 400
 });
 slider.start();
 
@@ -46,6 +46,23 @@ var collections = {
 };
 
 var currentCollection;
+
+// Appends a div to collections page for each collection
+if (window.location.pathname == "/collections") {
+		for (collection in collections) {
+				var collKey = collection;
+				var collVal = collections[collection];
+
+				// Text size default to medium unless 'Liverpool Monuments'
+				var textSize = "med-text"
+				if (collVal === "Liverpool Monuments"){
+					textSize = "lg-text"
+				};
+				
+				var collectionDiv = '<div class="img-sml" data-collection="' + collKey + '" onclick="chooseCollection(this)"><div class="left-arrow"></div><div class="overlay"><p class="' + textSize + '">' + collVal + '</p></div></div>'
+				document.getElementsByClassName("collections")[0].innerHTML += collectionDiv;
+		}
+}
 
 // Appends collection to hash and change window
 var chooseCollection = function(x) {

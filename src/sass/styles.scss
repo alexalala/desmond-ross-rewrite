@@ -87,6 +87,7 @@ form {
 	width: 75%;
 	text-align: center;
 	overflow: hidden;
+	overflow-y: scroll;
 }
 
 .sliderBorder {
@@ -257,6 +258,10 @@ form {
 }
 
 @media handheld, screen and (max-width: 800px) {
+	body {
+		position: inherit;
+	}
+
 	form {
 		margin-top: 2vh;
 
@@ -270,7 +275,7 @@ form {
 	}
 
 	.nav {
-		height: 135px;
+		height: 170px;
 		width: 100vw;
 		padding-bottom: 2rem;
 		box-shadow: 4px 0 20px 0;
