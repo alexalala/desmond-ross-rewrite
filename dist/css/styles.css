@@ -126,11 +126,11 @@ form {
   bottom: 1rem;
   position: absolute;
   right: 7rem;
-  opacity: 0.7; }
+  opacity: 0.8; }
 
 .overlay {
   background-color: #666;
-  opacity: 0.7;
+  opacity: 0.8;
   position: absolute;
   font-family: "Raleway", sans-serif;
   margin: 0 -1rem 0 1rem;

@@ -22,7 +22,7 @@ var images = [
     {url:'assets/hairdresser.jpg', name:'The Hairdresser', collection: 'Liverpool Streets', desc:'A Wavertree Hairdressers, belonging to Bob Cochran (Bunty). At the time he only charged 20p for a haircut'},
     {url:'assets/high-street-wavertree.jpg', name:'Wavertree High Street', collection: 'Liverpool Streets', desc:'This painting shows the High Street of Wavertree covered in a blanket of snow. In the background you can see the Picton Clock Tower. Reference to Wavertree can be found in the Doomsday Book, where it was referred to as "Wartree", "Vauretea" and "Wavre".'},
     {url:'assets/holy-trinity.jpg', name:'The Holy Trinity Church', collection: 'Liverpool Streets', desc:'Built in 1794, the Holy Trinity Church is an active Anglican Parish Church in the deanery of Toxteth and Wavertree. More information on the church can be found on <a href="http://www.holytrinitywavertree.org.uk">this website</a>. This picture shows the church at Christmas time.'},
-    {url:'assets/magnet-cinema.jpg', name:'The Magnet Cinema', collection: 'Historic Buildings', desc:'The Magnet Cinema was opened in 1914 on Picton Road and only had one screen, yet could seat up to 1038 people. The building has now lost its roof and has ironically been replaced with a roofing company.'},
+    {url:'assets/magnet-cinema.jpg', name:'The Magnet Cinema', collection: 'New In', desc:'The Magnet Cinema was opened in 1914 on Picton Road and only had one screen, yet could seat up to 1038 people. The building has now lost its roof and has ironically been replaced with a roofing company.'},
     {url:'assets/picton-clock-tower.jpg', name:'The Picton Clock Tower', collection: 'Liverpool Monuments', desc:'Created in 1884 by James Picton as a memorial to his wife, this tower has a clock face on each of its 4 sides.'},
     {url:'assets/pye-street.jpg', name:'Pye Street', collection: 'Liverpool Streets', desc:'Pye Street is a small, narrow lane that is round the back of the old ESSO petrol station. It still has some remarkable features that have remained, such as the victorian streetlights depicted in the painting.'},
     {url:'assets/railway-sidings-wavertree.jpg', name:'Railway Sidings, Wavertree', collection: 'Liverpool Streets', desc:'This painting is a night scene, illustrating railway workers loading the trains up with coal.. well before the days of health and safety! These are the Down Hill sidings on Edge Hill.'},
@@ -53,13 +53,22 @@ if (window.location.pathname == "/collections") {
 				var collKey = collection;
 				var collVal = collections[collection];
 
+				// Get images from array to be collection background
+				var imgUrl;
+				for (var i = 0, l = images.length; i < l; i++) {
+						var img = images[i];
+						if (collVal === img['collection']) {
+								imgUrl = img['url'];
+						}
+				}
+
 				// Text size default to medium unless 'Liverpool Monuments'
 				var textSize = "med-text"
 				if (collVal === "Liverpool Monuments"){
-					textSize = "lg-text"
+						textSize = "lg-text"
 				};
-				
-				var collectionDiv = '<div class="img-sml" data-collection="' + collKey + '" onclick="chooseCollection(this)"><div class="left-arrow"></div><div class="overlay"><p class="' + textSize + '">' + collVal + '</p></div></div>'
+
+				var collectionDiv = '<div class="img-sml" data-collection="' + collKey + '" onclick="chooseCollection(this)" style="background-image: url(\'../../' + imgUrl + '\');"><div class="left-arrow"></div><div class="overlay"><p class="' + textSize + '">' + collVal + '</p></div></div>'
 				document.getElementsByClassName("collections")[0].innerHTML += collectionDiv;
 		}
 }
