@@ -147,9 +147,21 @@ form {
 
 .prints {
   display: flex;
-  margin-left: 15vw; }
+  margin: 0 15vw; }
   .prints h3 {
     margin-top: 10vh; }
+
+.lg-print,
+.med-print {
+  width: 65%;
+  margin: 1rem;
+  margin-top: auto;
+  min-width: 180px; }
+  .lg-print img,
+  .med-print img {
+    display: block;
+    width: 100%;
+    height: auto; }
 
 .med-print-text {
   text-align: left; }
@@ -168,7 +180,7 @@ form {
   margin: 3rem 3rem; }
 
 .subheading {
-  margin: 1vh 3vh; }
+  margin: 5vh 3vh; }
 
 .contact h2 {
   margin-bottom: 6vh; }
@@ -235,8 +247,11 @@ form {
     height: 25vh; }
   .img-lg {
     height: 40vh; }
+  .lg-print,
+  .med-print {
+    margin-top: initial; }
   .prints {
-    margin: 3vh 5vw; }
+    margin: 3vh 12vw; }
     .prints h3 {
       margin-top: 0; }
   .med-print-text {
