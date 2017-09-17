@@ -1,6 +1,9 @@
 @import url("https://fonts.googleapis.com/css?family=Dancing+Script|Raleway");
 /* COLOURS */
 /* FONTS */
+/* ==========================================================================
+															GENERAL STYLES
+========================================================================== */
 body {
   height: 100vh;
   margin: 0; }
@@ -108,9 +111,6 @@ form {
   box-shadow: 3px 2px 20px;
   position: relative; }
 
-.img-sml.prices {
-  width: 30vw; }
-
 .img-lg {
   background-color: black;
   height: 55vh;
@@ -123,7 +123,11 @@ form {
 .centred {
   text-align: center; }
 
-.collections, .collection {
+/* ==========================================================================
+															COLLECTION(S) PAGE STYLES
+========================================================================== */
+.collections,
+.collection {
   display: inline-flex;
   flex-wrap: wrap;
   margin-left: 4vw; }
@@ -156,6 +160,9 @@ form {
     font-size: 0.75rem;
     margin: 1.1rem 0 1.2rem 0; }
 
+/* ==========================================================================
+															PRICES PAGE STYLES
+========================================================================== */
 .prints {
   display: flex;
   margin: 0 15vw; }
@@ -180,6 +187,9 @@ form {
 .lg-print-text p, .lg-print-text h3 {
   text-align: right; }
 
+/* ==========================================================================
+															ABOUT PAGE STYLES
+========================================================================== */
 .about p {
   margin: 1rem 3rem 0 3rem; }
 
@@ -187,12 +197,18 @@ form {
   width: 50vw;
   margin: 2% 0 10% 17%; }
 
+/* ==========================================================================
+															IMAGE PAGE STYLES
+========================================================================== */
 .image p {
   margin: 3rem 3rem; }
 
 .subheading {
   margin: 5vh 3vh; }
 
+/* ==========================================================================
+															CONTACT PAGE STYLES
+========================================================================== */
 .contact h2 {
   margin-bottom: 6vh; }
 
@@ -221,6 +237,9 @@ form {
   color: white;
   padding: 10px 0; }
 
+/* ==========================================================================
+															TOP-NAV STYLES
+========================================================================== */
 @media handheld, screen and (max-width: 800px) {
   body {
     position: inherit; }
@@ -274,6 +293,9 @@ form {
   .about .img-sml {
     margin: 2% 25%; } }
 
+/* ==========================================================================
+															IPHONE 5 WIDTH STYLES
+========================================================================== */
 @media handheld, screen and (max-width: 320px) {
   p {
     font-size: 0.75rem; }
