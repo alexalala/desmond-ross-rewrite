@@ -1,5 +1,9 @@
 @import 'vars.scss';
 
+/* ==========================================================================
+															GENERAL STYLES
+========================================================================== */
+
 body {
 	height: 100vh;
 	margin: 0;
@@ -72,10 +76,25 @@ form {
 		li {
 			font-size: 1.8vw;
 			line-height: 7vh;
+			padding: 0px;
 			padding-left: 4vw;
+			transition: background-color 0.4s ease;
+
+			&:hover {
+				background-color: $blue;
+			}
 
 			a {
 				text-decoration: none;
+				transition: color 0.4s ease;
+				margin: 0px;
+				display: block;
+				width: 100%;
+				height: 100%;
+
+				&:hover {
+					color: $nav-bg;
+				}
 			}
 		}
 	}
@@ -119,10 +138,6 @@ form {
 	position: relative;
 }
 
-.img-sml.prices {
-	width: 30vw;
-	}
-
 .img-lg {
 	background-color: black;
 	height: 55vh;
@@ -137,7 +152,12 @@ form {
 	text-align: center;
 }
 
-.collections, .collection {
+/* ==========================================================================
+															COLLECTION(S) PAGE STYLES
+========================================================================== */
+
+.collections,
+.collection {
 	display: inline-flex;
 	flex-wrap: wrap;
 	margin-left: 4vw;
@@ -177,12 +197,29 @@ form {
 	}
 }
 
+/* ==========================================================================
+															PRICES PAGE STYLES
+========================================================================== */
 .prints {
 	display: flex;
-	margin-left: 15vw;
+	margin: 0 15vw;
 
 	h3 {
 		margin-top: 10vh;
+	}
+}
+
+.lg-print,
+.med-print {
+	width: 65%;
+	margin: 1rem;
+	margin-top: auto;
+	min-width: 180px;
+
+	img {
+		display: block;
+	  width: 100%;
+	  height: auto;
 	}
 }
 
@@ -196,6 +233,9 @@ form {
 	}
 }
 
+/* ==========================================================================
+															ABOUT PAGE STYLES
+========================================================================== */
 .about {
 	p {
 		margin: 1rem 3rem 0 3rem;
@@ -207,6 +247,9 @@ form {
 	}
 }
 
+/* ==========================================================================
+															IMAGE PAGE STYLES
+========================================================================== */
 .image {
 	p {
 		margin: 3rem 3rem;
@@ -214,10 +257,12 @@ form {
 }
 
 .subheading {
-	margin: 1vh 3vh;
+	margin: 5vh 3vh;
 }
 
-
+/* ==========================================================================
+															CONTACT PAGE STYLES
+========================================================================== */
 
 .contact {
 	h2 {
@@ -256,6 +301,10 @@ form {
 		padding: 10px 0;
 	}
 }
+
+/* ==========================================================================
+															TOP-NAV STYLES
+========================================================================== */
 
 @media handheld, screen and (max-width: 800px) {
 	body {
@@ -298,6 +347,10 @@ form {
 				font-size: 0.8rem;
 				line-height: 4vh;
 				padding: 0 0.5rem 0 0.5rem;
+
+				a {
+					display: inline;
+				}
 			}
 		}
 		ul::after {
@@ -319,8 +372,13 @@ form {
 		height: 40vh;
 	}
 
+	.lg-print,
+	.med-print {
+		margin-top: initial;
+	}
+
 	.prints {
-		margin: 3vh 5vw;
+		margin: 3vh 12vw;
 
 		h3 {
 			margin-top: 0;
@@ -340,6 +398,10 @@ form {
 		}
 	}
 }
+
+/* ==========================================================================
+															IPHONE 5 WIDTH STYLES
+========================================================================== */
 
 @media handheld, screen and (max-width: 320px) {
 	p {
