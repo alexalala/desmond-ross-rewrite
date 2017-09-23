@@ -4,7 +4,6 @@ var exphbs = require('express-handlebars');
 var app = express();
 
 app.use('/dist', express.static('dist'));
-app.use('/third-party', express.static('third-party'));
 app.use('/assets', express.static('assets'));
 
 app.engine('handlebars', exphbs({defaultLayout: 'main'}));

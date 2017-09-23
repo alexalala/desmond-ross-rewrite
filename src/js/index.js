@@ -1,12 +1,3 @@
-new IdealImageSlider.Slider('#slider');
-
-var slider = new IdealImageSlider.Slider({
-		selector: '#slider',
-		height: 400,
-		interval: 400
-});
-slider.start();
-
 var images = [
     {url:'assets/abbey-cinema.jpg', name:'Abbey Cinema, Wavertree', collection: 'Historic buildings', desc:'The Abbey Cinema was designed by a local architect and first opened in 1939. In 1964, the it underwent a refurbishment to "Cinerama" which proved a spectacular hit with the Wavertree locals, including adding a curved screen and an incredible sound system to the cinema. It is now a Co-op supermarket.'},
     {url:'assets/blue-coat-school.jpg', name:'The Blue Coat School', collection: 'Wavertree Parks', desc:'Shown in this picture is the Mystery Public Park blanketed in snow, looking ahead to the silhouette of the Blue Coat School and its clock tower.'},
